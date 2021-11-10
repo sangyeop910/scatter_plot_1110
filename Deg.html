@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+
+<meta charset="utf-8">
+
+<body>
+    <div id="container">
+        <select id="mod1" onchange="changeMod(this.value)"></select>
+
+        <div data-role="sizeslider">
+            <label for="size_slider">Value:</label>
+            <input name="size_slider" id="size_slider" oninput="SlideValue(this.value)" type="range" step="0.000001">
+            <input name="size_num" id="size_num" type="number" oninput="SlideValue(this.value)" step="0.000001">
+        </div>
+
+        <div class="Graph"></div>
+
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="./deg.js"></script>
+
+</body>
+
+</html>
